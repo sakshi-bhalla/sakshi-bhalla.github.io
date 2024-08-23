@@ -92,17 +92,14 @@ hr {
     position: relative;
     margin-bottom: 30px;
     padding-left: 40px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
 .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -12px;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #333;
+    content: none; /* Remove the dots */
 }
 
 .timeline-date {
