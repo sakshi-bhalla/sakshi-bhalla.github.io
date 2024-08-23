@@ -21,6 +21,7 @@ header h1 {
     color: #4d4d4d;
     font-weight: bold;
     letter-spacing: 0.1em;
+    text-transform: uppercase; /* Ensure all caps */
 }
 
 /* Navigation */
@@ -135,4 +136,5 @@ footer {
 
 footer p {
     margin: 0;
+    text-transform: uppercase; /* Ensure all caps */
 }
