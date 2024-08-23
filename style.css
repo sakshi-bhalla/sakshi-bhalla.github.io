@@ -20,7 +20,7 @@ header h1 {
     font-size: 36px;
     color: #4d4d4d;
     font-weight: bold; /* Bold Garamond */
-    letter-spacing: 0.2em; /* Increase letter spacing */
+    letter-spacing: 0.1em; /* Increase letter spacing */
 }
 
 /* Navigation */
@@ -42,7 +42,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #4d4d4d;
-    font-size: 16px;
+    font-size: 18px; /* Increased font size for navigation links */
     transition: color 0.3s ease;
     font-weight: bold; /* Bold Garamond */
 }
@@ -69,6 +69,17 @@ section h2 {
     color: #4d4d4d;
     font-weight: bold; /* Bold Garamond */
     margin-bottom: 10px;
+}
+
+section p {
+    font-size: 20px; /* Increased font size for paragraph text */
+}
+
+section a {
+    font-size: 20px; /* Increased font size for links */
+    color: #4d4d4d;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 hr {
