@@ -85,57 +85,42 @@ hr {
     margin: 0 auto;
 }
 
-.timeline-item {
-    padding: 10px 20px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-.timeline-item:nth-child(odd) {
-    left: 0;
-}
-
-.timeline-item:nth-child(even) {
-    left: 50%;
-}
-
-.timeline-item::after {
-    content: "";
+.timeline::before {
+    content: '';
     position: absolute;
-    width: 6px;
-    background-color: #333;
     top: 0;
     bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+    left: 20px;
+    width: 2px;
+    background: #333;
 }
 
-.timeline-date {
-    padding: 5px 10px;
-    background: #f4f4f4;
-    border-radius: 4px;
-    font-size: 16px;
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 50px;
+}
+
+.timeline-item i {
+    position: absolute;
+    left: 0;
+    top: 0;
     color: #4d4d4d;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .timeline-content {
+    background-color: #fff;
     padding: 10px;
-    background-color: white;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .timeline-content h3 {
-    margin-top: 0;
+    margin: 0;
     font-size: 18px;
-}
-
-.timeline-content p {
-    margin-bottom: 0;
-    font-size: 16px;
+    color: #4d4d4d;
+    font-weight: normal;
 }
 
 /* Footer */
