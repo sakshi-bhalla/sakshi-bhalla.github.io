@@ -20,7 +20,7 @@ header h1 {
     font-size: 36px;
     color: #4d4d4d;
     font-weight: bold; /* Bold Garamond */
-    letter-spacing: 0.1em; /* Increase letter spacing */
+    letter-spacing: 0.2em; /* Increase letter spacing */
 }
 
 /* Navigation */
