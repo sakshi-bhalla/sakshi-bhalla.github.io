@@ -79,7 +79,43 @@ hr {
     margin-bottom: 20px;
 }
 
-/* Research Item Styles */
+/* Bubble Styles for News and Updates */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 2px solid #333;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.timeline-item::before {
+    content: none; /* Remove the dots */
+}
+
+.timeline-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #333;
+}
+
+/* Bubble Styles for Research Items */
 .research-item {
     background-color: #fff;
     padding: 15px;
