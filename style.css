@@ -1,39 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakshi Bhalla</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Sakshi Bhalla</h1>
-    </header>
+/* General Styles */
+body {
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
 
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+/* Header */
+header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <hr>
-            <p>I am a PhD student in Media and Communications at the University of Illinois at Urbana-Champaign, where I also hold the <a href="https://apps.grad.illinois.edu/fellowship-finder/SearchResult/Fellowship/4683" target="_blank">Illinois Distinguished Fellowship</a>, the most prestigious award for incoming graduate students.</p>
-            <p>My research explores political communication, media consumption, and news audiences within the democratic contexts of India and the United States, employing both statistical and qualitative methods. I am concurrently enrolled in the MS in Applied Statistics program alongside my PhD.</p>
-            <p>Prior to this, I earned an MA in Linguistics from Jawaharlal Nehru University, New Delhi, and a BA (Honors) in Journalism from Lady Shri Ram College, New Delhi. You can view my CV <a href="cv.html">here</a>.</p>
-            <p>If you're in the area or our paths cross at any event, I’d love to grab a coffee and chat about research or potential collaborations! </p>     
-        </section>
-    </main>
+header h1 {
+    font-size: 36px;
+    color: #4d4d4d;
+    font-weight: bold; /* Bold Garamond */
+    letter-spacing: 0.1em; /* Increase letter spacing */
+}
 
-    <footer>
-        <p>&copy; 2024 Sakshi Bhalla. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-weight: bold; /* Bold Garamond */
+}
+
+nav ul li a:hover {
+    color: #0d0d0d;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #4d4d4d;
+    font-weight: bold; /* Bold Garamond */
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #4d4d4d;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #808080;
+}
+
+footer p {
+    margin: 0;
+}
