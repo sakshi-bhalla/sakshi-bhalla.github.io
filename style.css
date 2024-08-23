@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: "Garamond", serif;
-    font-weight: bold;
+    font-weight: normal; /* Changed from bold to normal */
     width: 800px;
     margin: 0 auto;
     line-height: 1.6;
@@ -42,9 +42,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #4d4d4d;
-    font-size: 18px; /* Increased font size for navigation links */
+    font-size: 16px; /* Reduced font size for navigation links */
     transition: color 0.3s ease;
-    font-weight: bold; /* Bold Garamond */
+    font-weight: normal; /* Normal Garamond */
 }
 
 nav ul li a:hover {
@@ -72,14 +72,15 @@ section h2 {
 }
 
 section p {
-    font-size: 20px; /* Increased font size for paragraph text */
+    font-size: 18px; /* Reduced font size for paragraph text */
+    font-weight: normal; /* Normal Garamond */
 }
 
 section a {
-    font-size: 20px; /* Increased font size for links */
+    font-size: 18px; /* Reduced font size for links */
     color: #4d4d4d;
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: normal; /* Normal Garamond */
 }
 
 hr {
