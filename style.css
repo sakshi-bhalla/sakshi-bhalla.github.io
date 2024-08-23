@@ -19,8 +19,8 @@ header {
 header h1 {
     font-size: 36px;
     color: #4d4d4d;
-    font-weight: bold; /* Bold Garamond */
-    letter-spacing: 0.1em; /* Increase letter spacing */
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
 
 /* Navigation */
@@ -44,7 +44,7 @@ nav ul li a {
     color: #4d4d4d;
     font-size: 16px;
     transition: color 0.3s ease;
-    font-weight: bold; /* Bold Garamond */
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -62,13 +62,13 @@ main {
 /* Sections */
 section {
     margin-bottom: 40px;
-    text-align: justify; /* Justify the text */
+    text-align: justify;
 }
 
 section h2 {
     font-size: 24px;
     color: #4d4d4d;
-    font-weight: bold; /* Bold Garamond */
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -76,6 +76,66 @@ hr {
     border: none;
     border-top: 1px solid #4d4d4d;
     margin-bottom: 20px;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 10px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-date {
+    padding: 5px 10px;
+    background: #f4f4f4;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+.timeline-content {
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+    font-size: 16px;
 }
 
 /* Footer */
