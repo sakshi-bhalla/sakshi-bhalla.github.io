@@ -21,7 +21,7 @@ header h1 {
     color: #4d4d4d;
     font-weight: bold;
     letter-spacing: 0.1em;
-    text-transform: uppercase; /* Ensure all caps */
+    text-transform: uppercase;
 }
 
 /* Navigation */
@@ -69,7 +69,7 @@ section {
 section h2 {
     font-size: 24px;
     color: #4d4d4d;
-    font-weight: bold;
+    font-weight: 700; /* Increased font-weight for News and Updates */
     margin-bottom: 10px;
 }
 
@@ -91,7 +91,7 @@ hr {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 20px;
+    left: 35px; /* Adjusted to align with the icon */
     width: 2px;
     background: #333;
 }
@@ -132,9 +132,5 @@ footer {
     border-top: 1px solid #ddd;
     font-size: 14px;
     color: #808080;
-}
-
-footer p {
-    margin: 0;
-    text-transform: uppercase; /* Ensure all caps */
+    text-transform: uppercase;
 }
