@@ -1,174 +1,105 @@
+/* General Styles */
 body {
     font-family: Georgia, serif;
     width: 800px;
     margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-html, body {
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-}
-
-.main-title {
-    color: #4d4d4d;
+/* Header */
+header {
     text-align: center;
-    font-size: 30px;
-}
-
-.main-title:hover {
-    cursor: default;
-}
-
-.content-body {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.section-container {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.section-header {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #808080;
-    font-size: 14px;
-    transition: color 0.5s ease;
-}
-
-.section-header:hover {
-    color: #0d0d0d;
-    cursor: pointer;
-    transition: color 0.5s ease;
-}
-
-.link-cv {
-    transition: color 0.5s ease;
-}
-
-.link-cv:hover {
-    color: #0d0d0d;
-    cursor: pointer;
-    transition: color 0.5s ease;
-}
-
-.line-divider {
-    border-color: #808080;
-    width: 319px;
     margin-top: 20px;
-    margin-bottom: 7px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
-
-.credentials {
-    font-size: 15px;
-    margin-top: 20px;
-    color: #808080;
-}
-
-.contact-link {
-    text-decoration: none;
-}
-
-.contact-label:hover {
-    cursor: pointer;
-}
-
-.about-me {
-    width: 600px;
-    text-align: justify;
-    text-justify: inter-word;
-    color: #4d4d4d;
-}
-
-.contact-divider {
-    border-color: #808080;
-    width: 319px;
-    margin-top: 28px;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.contact-label {
-    color: #808080;
-    font-size: 15px;
-}
-
-.contact-info {
+header h1 {
+    font-size: 36px;
     color: #4d4d4d;
 }
 
-.contact-icon {
-    height: 23px;
-    width: 23px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.section-subtitle {
-    color: #808080;
-    font-size: 15px;
-    padding-top: 20px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.experience {
-    width: 600px;
-    text-align: justify;
-    text-justify: inter-word;
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
     color: #4d4d4d;
-}
-
-.experience-heading {
-    margin-left: 50px;
-    float: left;
-}
-
-.experience-subheading {
     font-weight: bold;
-    line-height: 30px;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.experience-instructor {
-    line-height: 30px;
+nav ul li a:hover {
+    color: #0d0d0d;
 }
 
-.professor-link {
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #4d4d4d;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Contact Info */
+#contact p {
+    font-size: 16px;
+}
+
+#contact a {
     text-decoration: none;
     color: #4d4d4d;
-    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.professor-link:hover {
-    color: #dadada;
+#contact a:hover {
+    color: #0d0d0d;
 }
 
-.research-experience {
-    width: 600px;
-    text-align: justify;
-    text-justify: inter-word;
-    color: #4d4d4d;
-}
-
-.section-body {
-    width: 700px;
-    margin: 0 auto;
-}
-
-.cv-link {
-    text-decoration: none;
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
     color: #808080;
+}
+
+footer p {
+    margin: 0;
 }
