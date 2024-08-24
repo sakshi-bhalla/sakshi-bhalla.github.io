@@ -82,8 +82,54 @@ hr {
     margin-bottom: 20px;
 }
 
-/* Teaching Item Styles */
-.teaching-item {
+/* Timeline Styles for News and Updates */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 2px solid #333;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #333; /* This is the vertical line */
+}
+
+.timeline-date {
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    left: -140px; /* Adjusted to place the date outside the bubble */
+    top: 0; /* Aligns the date at the top */
+}
+
+.timeline-content p {
+    font-family: "Georgia", serif;
+    margin: 0;
+    color: #333;
+}
+
+/* Bubble Styles for Research Items */
+.research-item {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -93,7 +139,7 @@ hr {
     font-size: 16px;
 }
 
-.teaching-item p {
+.research-item p {
     font-family: "Georgia", serif;
     margin: 10px 0;
 }
