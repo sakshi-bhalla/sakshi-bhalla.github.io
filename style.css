@@ -94,13 +94,20 @@ hr {
 .timeline-item {
     position: relative;
     margin-bottom: 30px;
-    padding-left: 40px;
+    padding-left: 20px;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     line-height: 1.4;
     font-size: 16px;
+}
+
+.timeline-item .timeline-date {
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
 }
 
 .timeline-item::before {
@@ -111,15 +118,6 @@ hr {
     bottom: 0;
     width: 1px; /* Same thickness as the horizontal line */
     background-color: #4d4d4d;
-}
-
-.timeline-date {
-    font-family: "Garamond", serif;
-    font-weight: bold;
-    color: #333;
-    position: absolute;
-    left: -140px; /* Adjusted to place the date outside the bubble */
-    top: 0; /* Aligns the date at the top */
 }
 
 .timeline-content p {
