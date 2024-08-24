@@ -82,7 +82,7 @@ hr {
     margin-bottom: 20px;
 }
 
-/* Bubble Styles for News and Updates */
+/* Timeline Styles for News and Updates */
 .timeline {
     position: relative;
     max-width: 800px;
@@ -112,6 +112,10 @@ hr {
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
+    position: absolute;
+    left: -100px; /* Adjust this value to position the date outside the bubble */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .timeline-content p {
