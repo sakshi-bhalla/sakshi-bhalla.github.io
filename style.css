@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-    font-family: "Garamond", serif;
-    font-weight: bold;
+    font-family: "Georgia", serif;
+    font-weight: 400; /* Lighter weight for body text */
     width: 800px;
     margin: 0 auto;
     line-height: 1.6;
@@ -17,6 +17,7 @@ header {
 }
 
 header h1 {
+    font-family: "Garamond", serif;
     font-size: 36px;
     color: #4d4d4d;
     font-weight: bold;
@@ -41,6 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: "Garamond", serif;
     text-decoration: none;
     color: #4d4d4d;
     font-size: 16px;
@@ -67,6 +69,7 @@ section {
 }
 
 section h2 {
+    font-family: "Garamond", serif;
     font-size: 24px;
     color: #4d4d4d;
     font-weight: 700;
@@ -105,12 +108,14 @@ hr {
 }
 
 .timeline-date {
+    font-family: "Garamond", serif;
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
 }
 
 .timeline-content p {
+    font-family: "Georgia", serif;
     margin: 0;
     color: #333;
 }
@@ -127,11 +132,13 @@ hr {
 }
 
 .research-item p {
+    font-family: "Georgia", serif;
     margin: 10px 0;
 }
 
 /* Footer */
 footer {
+    font-family: "Garamond", serif;
     text-align: center;
     margin-top: 40px;
     padding: 10px 0;
