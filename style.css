@@ -78,7 +78,7 @@ section h2 {
 
 hr {
     border: none;
-    border-top: 1px solid #4d4d4d;
+    border-top: 1px solid #4d4d4d; /* Horizontal line */
     margin-bottom: 20px;
 }
 
@@ -88,7 +88,7 @@ hr {
     max-width: 800px;
     margin: 0 auto;
     padding-left: 20px;
-    border-left: 2px solid #333;
+    border-left: 1px solid #4d4d4d; /* Vertical line */
 }
 
 .timeline-item {
@@ -109,8 +109,8 @@ hr {
     left: -20px;
     top: 0;
     bottom: 0;
-    width: 2px;
-    background-color: #333; /* This is the vertical line */
+    width: 1px; /* Same thickness as the horizontal line */
+    background-color: #4d4d4d;
 }
 
 .timeline-date {
