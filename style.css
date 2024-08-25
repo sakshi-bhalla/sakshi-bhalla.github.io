@@ -22,7 +22,7 @@ header h1 {
     color: #4d4d4d;
     font-weight: bold;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
+    /* Removed text-transform: uppercase; to keep the name as "Sakshi Bhalla" */
 }
 
 /* Navigation */
