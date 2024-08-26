@@ -4,7 +4,7 @@ body {
     font-weight: 400; /* Lighter weight for body text */
     width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
+    line-height: 1.6; 
     color: #333;
     background-color: #F5E8DD; /* Updated background color */
 }
