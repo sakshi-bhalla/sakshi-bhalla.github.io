@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: "Georgia", serif; /* Changed to a serif font */
+    font-family: "Georgia", serif; /* Serif font for body */
     font-weight: 400; /* Lighter weight for body text */
     width: 800px;
     margin: 0 auto;
@@ -17,12 +17,12 @@ header {
 }
 
 header h1 {
-    font-family: "Futura", sans-serif; /* Changed to Futura */
+    font-family: "Trebuchet MS", Helvetica, sans-serif; /* Changed to Trebuchet MS */
     font-size: 36px;
-    color: #000000; /* Changed to black */
+    color: #000000; /* Black color */
     font-weight: bold;
-    letter-spacing: 0.1em;
     text-transform: capitalize;
+    letter-spacing: normal; /* Default spacing */
 }
 
 /* Navigation */
@@ -42,9 +42,9 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: "Futura", sans-serif; /* Changed to Futura */
+    font-family: "Trebuchet MS", Helvetica, sans-serif; /* Changed to Trebuchet MS */
     text-decoration: none;
-    color: #000000; /* Changed to black */
+    color: #000000; /* Black color */
     font-size: 16px;
     transition: color 0.3s ease;
     font-weight: bold;
@@ -69,9 +69,9 @@ section {
 }
 
 section h2 {
-    font-family: "Futura", sans-serif; /* Changed to Futura */
+    font-family: "Trebuchet MS", Helvetica, sans-serif; /* Changed to Trebuchet MS */
     font-size: 24px;
-    color: #000000; /* Changed to black */
+    color: #000000; /* Black color */
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -104,9 +104,9 @@ hr {
 }
 
 .timeline-item .timeline-date {
-    font-family: "Futura", sans-serif; /* Changed to Futura */
+    font-family: "Trebuchet MS", Helvetica, sans-serif; /* Changed to Trebuchet MS */
     font-weight: bold;
-    color: #000000; /* Changed to black */
+    color: #000000; /* Black color */
     margin-bottom: 5px;
 }
 
@@ -121,7 +121,7 @@ hr {
 }
 
 .timeline-content p {
-    font-family: "Georgia", serif; /* Changed to a serif font */
+    font-family: "Georgia", serif; /* Serif font for body */
     margin: 0;
     color: #333;
 }
@@ -138,13 +138,13 @@ hr {
 }
 
 .research-item p {
-    font-family: "Georgia", serif; /* Changed to a serif font */
+    font-family: "Georgia", serif; /* Serif font for body */
     margin: 10px 0;
 }
 
 /* Footer */
 footer {
-    font-family: "Futura", sans-serif; /* Changed to Futura */
+    font-family: "Trebuchet MS", Helvetica, sans-serif; /* Changed to Trebuchet MS */
     text-align: center;
     margin-top: 40px;
     padding: 10px 0;
