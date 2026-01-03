@@ -38,5 +38,46 @@
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+    "vendor/font-awesome/brands",
+    "custom"
 ;
+
+.author__avatar {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  float: none !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.author__avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  float: none !important;
+}
+
+.home-panel {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 1.25rem 0;
+  border-radius: 6px;
+}
+
+.greedy-nav a,
+.masthead__menu-item a {
+  color: #7a7a7a;
+}
+
+.greedy-nav a:hover,
+.greedy-nav a:focus,
+.masthead__menu-item a:hover,
+.masthead__menu-item a:focus {
+  color: #2f2f2f;
+}
