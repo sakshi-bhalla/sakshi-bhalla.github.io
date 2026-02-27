@@ -1,83 +1,187 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
 @import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/default",
-    "theme/dark",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands",
-    "custom"
+  "vendor/breakpoint/breakpoint",
+  "themes",
+  "theme/default",
+  "theme/dark",
+  "include/mixins",
+  "vendor/susy/susy",
+  "layout/reset",
+  "layout/base",
+  "include/utilities",
+  "layout/tables",
+  "layout/buttons",
+  "layout/notices",
+  "layout/masthead",
+  "layout/navigation",
+  "layout/footer",
+  "syntax",
+  "layout/forms",
+  "layout/page",
+  "layout/archive",
+  "layout/sidebar",
+  "vendor/font-awesome/fontawesome",
+  "vendor/font-awesome/solid",
+  "vendor/font-awesome/brands",
+  "custom"
 ;
 
-.author__avatar {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  float: none !important;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.author__avatar img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  float: none !important;
-}
-
+/* ===========================
+   Home/About panel image
+   =========================== */
 .home-panel {
   width: 100%;
-  max-height: 220px;
-  object-fit: cover;
+  max-width: 100%;
   display: block;
-  margin: 0 0 1.25rem 0;
-  border-radius: 6px;
+  margin: 0 auto 1.25rem;
+  border-radius: 10px;
 }
 
+.home-panel--placeholder {
+  aspect-ratio: 6 / 1;
+  min-height: 120px;
+  border: 0;
+  background:
+    linear-gradient(120deg, rgba(245, 245, 245, 0.85), rgba(250, 250, 250, 0.85)),
+    repeating-linear-gradient(
+      90deg,
+      #d8e0d4 0,
+      #d8e0d4 38px,
+      #ead9c2 38px,
+      #ead9c2 76px,
+      #c7d7dd 76px,
+      #c7d7dd 114px,
+      #f1e0d6 114px,
+      #f1e0d6 152px
+    );
+  color: #6c6c6c;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   Monochrome timeline
+   =========================== */
+.timeline {
+  --timeline-date-width: 120px;
+  --timeline-marker-width: 18px;
+  --timeline-gap: 16px;
+  position: relative;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--timeline-date-width) + var(--timeline-gap) + (var(--timeline-marker-width) / 2));
+  top: 0.35rem;
+  bottom: 0.35rem;
+  width: 2px;
+  background: var(--global-border-color);
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: var(--timeline-date-width) var(--timeline-marker-width) 1fr;
+  column-gap: var(--timeline-gap);
+  align-items: start;
+  padding: 0.15rem 0 1.25rem;
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__date {
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+  text-align: right;
+  padding-top: 0.15em;
+}
+
+.timeline__marker {
+  position: relative;
+  min-height: 0;
+}
+
+.timeline__content {
+  color: var(--global-text-color);
+}
+
+.timeline__content p {
+  margin: 0 0 0.65rem;
+}
+
+@include breakpoint(max-width $small) {
+  .timeline {
+    --timeline-date-width: 100px;
+  }
+}
+
+/* ===========================
+   Lighter top navigation
+   =========================== */
 .greedy-nav a,
 .masthead__menu-item a {
-  color: #7a7a7a;
+  color: var(--global-text-color-light);
 }
 
 .greedy-nav a:hover,
 .greedy-nav a:focus,
 .masthead__menu-item a:hover,
 .masthead__menu-item a:focus {
-  color: #2f2f2f;
+  color: var(--global-text-color);
+}
+
+/* ===========================
+   Sidebar avatar ONLY centered
+   =========================== */
+/* Sidebar avatar LEFT aligned to match name/text */
+.sidebar .author__avatar,
+.author__avatar {
+  width: 100%;
+  text-align: left;       /* key change */
+  margin: 0;
+  padding: 0;
+  float: none !important;
+}
+
+.sidebar .author__avatar img,
+.author__avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;         /* key change */
+  margin: 0;              /* no auto-centering */
+  float: none !important;
+}
+
+
+/* ===========================
+   Sidebar text + icons LEFT aligned
+   =========================== */
+.sidebar .author__content,
+.sidebar .author__urls-wrapper,
+.sidebar .author__urls,
+.sidebar .author__name,
+.sidebar .author__bio,
+.sidebar .author__pronouns {
+  text-align: left !important;
+}
+
+/* Keep employer link aligned with icon in sidebar list */
+.author__urls .author__desktop a {
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
