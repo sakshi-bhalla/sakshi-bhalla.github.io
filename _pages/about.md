@@ -10,7 +10,7 @@ redirect_from:
 
 ## About
 
-I am a PhD student in Media and Communications at the University of Illinois at Urbana-Champaign, where I am advised by \href{https://clinecenter.illinois.edu/people/salthaus}{Prof. Scott Althaus}. I also hold the Illinois Distinguished Fellowship, the most prestigious award for incoming graduate students.
+I am a PhD student in Media and Communications at the University of Illinois at Urbana-Champaign, where I am advised by [Prof. Scott Althaus](https://clinecenter.illinois.edu/people/salthaus). I also hold the Illinois Distinguished Fellowship, the most prestigious award for incoming graduate students.
 
 Substantively, my research focuses on political information, its political economy, and spillovers onto political behavior in democratic contexts, particularly within India and the United States. I study how the structure and dynamics of the information environment shape who sees what, when, and how. My work examines the evolving relationship between media supply and user demand in high-choice environments, and how these interactions align (or fail to) with democratic informational needs.
 
