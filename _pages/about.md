@@ -16,9 +16,11 @@ Substantively, my research focuses on political information, its political econo
 
 Methodologically, I rely on econometric methods, including advances in spatial and network analyses and causal inference. Some of my work has also used qualitative methods like semi-structured interviews and discourse analysis.
 
-I am also pursuing an MS in Statistics alongside my PhD. Prior to this, I earned an MA in Linguistics from Jawaharlal Nehru University, New Delhi, and a BA (Honors) in Journalism from Lady Shri Ram College, New Delhi.
+I earned an MS in Statistics alongside my PhD, which I finished in Summer 2025. Prior to this, I completed an MA in Linguistics at Jawaharlal Nehru University and a BA (Honors) in Journalism at Lady Shri Ram College, both in New Delhi.
 
 You can download my CV [here](/files/cv.pdf).
+
+This summer takes me to Amazon HQ2 in Washington DC, where I will join as a Research Scientist Intern. I am very excited to bring my work in econometrics, computational social science, and public opinion dynamics to the role.
 
 If you are in the area or our paths cross at any event, I am always happy to grab a coffee and discuss shared interests or potential collaborations! You can contact me at: sakshib3[at]illinois[dot]edu.
 
