@@ -10,7 +10,7 @@ redirect_from:
 
 ## About
 
-I am a PhD student in Media and Communications at the University of Illinois at Urbana-Champaign, where I am advised by [Prof. Scott Althaus](https://clinecenter.illinois.edu/people/salthaus). I also hold the Illinois Distinguished Fellowship, the most prestigious award for incoming graduate students.
+I am a PhD student in Media and Communications at the <a href="https://media.illinois.edu/sakshi-bhalla/" target="_blank">University of Illinois at Urbana-Champaign</a>, where I am advised by <a href="https://clinecenter.illinois.edu/people/salthaus" target="_blank">Prof. Scott Althaus</a>. I also hold the Illinois Distinguished Fellowship, the most prestigious award for incoming graduate students.
 
 Substantively, my research focuses on political information, its political economy, and spillovers onto political behavior in democratic contexts, particularly within India and the United States. I study how the structure and dynamics of the information environment shape who sees what, when, and how. My work examines the evolving relationship between media supply and user demand in high-choice environments, and how these interactions align (or fail to) with democratic informational needs.
 
@@ -18,7 +18,7 @@ Methodologically, I rely on econometric methods, including advances in spatial a
 
 I earned an MS in Statistics alongside my PhD, which I finished in Summer 2025. Prior to this, I completed an MA in Linguistics at Jawaharlal Nehru University and a BA (Honors) in Journalism at Lady Shri Ram College, both in New Delhi.
 
-You can download my CV [here](/files/cv.pdf).
+You can download my CV <a href="/files/cv.pdf" target="_blank">here</a>.
 
 This summer takes me to Amazon HQ2 in Washington DC, where I will join as a Research Scientist Intern. I am very excited to bring my work in econometrics, computational social science, and public opinion dynamics to the role.
 
@@ -68,14 +68,14 @@ If you are in the area or our paths cross at any event, I am always happy to gra
     <div class="timeline__date">August 2024</div>
     <div class="timeline__marker" aria-hidden="true"></div>
     <div class="timeline__content">
-      My interview with CISLM is live! I discuss my latest study examining the circulation of local print media (and more). Read it here.
+      My interview with CISLM is live! I discuss my latest study examining the circulation of local print media (and more). <a href="https://www.cislm.org/qa-with-local-news-circulation-researcher-sakshi-bhalla/" target="_blank">Read it here.</a>
     </div>
   </div>
   <div class="timeline__item">
     <div class="timeline__date">June 2024</div>
     <div class="timeline__marker" aria-hidden="true"></div>
     <div class="timeline__content">
-      I discussed my working paper on digital and legacy media structures (in India) and how they shape audience behaviors (even) on social media platforms at the Social Media and Society in India Conference at U Michigan. Read a brief draft here.
+      I discussed my working paper on digital and legacy media structures (in India) and how they shape audience behaviors (even) on social media platforms at the Social Media and Society in India Conference at U Michigan. <a href="https://drive.google.com/file/d/1CQmoQ5ym5nRqDBszTJK8P0oVnWvMsaN0/view" target="_blank">Read a brief draft here.</a>
     </div>
   </div>
 </div>
