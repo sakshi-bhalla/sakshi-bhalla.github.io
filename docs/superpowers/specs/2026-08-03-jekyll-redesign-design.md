@@ -50,12 +50,20 @@ assets/fonts/OFL.txt
 index.md
 research.md
 teaching.md
-files/          (existing, untouched)
+cv.md
+files/          (existing, minus the placeholders below)
 images/         (existing; only the favicon set and manifest.json are referenced)
 ```
 
+`files/bibtex1.bib` and `files/slides1.pdf`, `slides2.pdf`, `slides3.pdf` are
+deleted. All four are academicpages template placeholders — the bib entry is
+"Alice, Bob and Charlie" in the *Journal of Examples*, and each slide deck is a
+two-page PDF whose only text is "Slides 1/2/3". Nothing links them, but
+`sitemap.xml` currently advertises all four to search engines. `cv.pdf` and
+`paper1-3.pdf` are real and stay.
+
 Pages live at the repository root. `_pages/` exists in academicpages only to work
-around an `include:` quirk; three pages do not need it.
+around an `include:` quirk; four pages do not need it.
 
 Everything from `main`'s `_layouts/`, `_includes/`, `_sass/`, `assets/js/`,
 `assets/fonts/`, `assets/webfonts/`, `_data/{authors,cv,ui-text}.yml`,
@@ -63,15 +71,27 @@ Everything from `main`'s `_layouts/`, `_includes/`, `_sass/`, `assets/js/`,
 
 ## URLs
 
-| Page     | URL           | Source        |
-|----------|---------------|---------------|
-| About    | `/`           | `index.md`    |
-| Research | `/research/`  | `research.md` |
-| Teaching | `/teaching/`  | `teaching.md` |
-| CV       | `/files/cv.pdf` | existing PDF |
+| Page     | URL           | Source        | In nav |
+|----------|---------------|---------------|--------|
+| About    | `/`           | `index.md`    | yes    |
+| Research | `/research/`  | `research.md` | yes    |
+| Teaching | `/teaching/`  | `teaching.md` | yes    |
+| CV (PDF) | `/files/cv.pdf` | existing PDF | yes   |
+| CV page  | `/cv/`        | `cv.md`       | no     |
 
 Pretty permalinks, matching what `main` serves today — not the static site's
 `/research.html`. Set per page via front-matter `permalink`.
+
+The nav's CV entry points straight at the PDF, as the static design does — one
+click to the document. `/cv/` is nonetheless rebuilt as a real page (its content
+is the single "Download the full CV as PDF" line it has today) because that URL
+is live and sitemapped; it stays reachable for old links and search results
+without being duplicated in the nav.
+
+`/blog/` is not rebuilt and will 404. It is live and sitemapped today, but its
+entire content is the string "More soon." — there are no posts. `/feed.xml` will
+also 404: `jekyll-feed` is dropped along with the blog, and the feed it currently
+serves is empty.
 
 ## Content model
 
@@ -130,13 +150,26 @@ Seed data is the four publications and two works-in-progress from
 ### Pages
 
 `index.md` carries the four about-page paragraphs plus a `## News` section of
-hand-written `<div class="entry">` blocks (date span + prose). `teaching.md`
-is a markdown list of five courses. `research.md` is a lede paragraph plus two
-loops over `site.data.publications` — `status != 'wip'` under **Publications**,
-`status == 'wip'` under **Works in progress**.
+hand-written `<div class="entry">` blocks (date span + prose), seven entries.
+`teaching.md` is a markdown list of five courses. `research.md` is a lede
+paragraph plus two loops over `site.data.publications` — `status != 'wip'` under
+**Publications**, `status == 'wip'` under **Works in progress**. `cv.md` is one
+line linking `/files/cv.pdf`.
 
-Prose for all three pages comes from `static-site-reference`, not from `main` —
-the static versions are the rewritten ones.
+Prose comes from `static-site-reference`, not from `main` — the static versions
+are the rewritten ones, and their edits are deliberate, not drift. In particular
+the static text says "PhD candidate" where the live site says "PhD student",
+drops the honorific from "Prof. Scott Althaus", sets publication titles in
+sentence case, and corrects the March 2025 news item to "National Institute on
+Drug Abuse" (the live site's "Drug Addiction" is wrong — NIDA is Abuse). All of
+these are kept.
+
+Content on the live site that the new site deliberately does not carry: the
+sidebar avatar, the panel image, the "Urbana, IL" location line (the role line
+already names the university), and the X/Twitter link. The `twitter` key is
+removed from `_config.yml` rather than special-cased in the template — the footer
+include renders whichever social keys are present, so deleting the key is what
+removes the link, and restoring it is a one-line change.
 
 ## Templating
 
@@ -262,9 +295,10 @@ and the workflow's deploy step fails.
 All of the following must pass before the work is called done:
 
 1. `bundle exec jekyll build` completes with no warnings.
-2. Local server returns 200 for `/`, `/research/`, `/teaching/`,
+2. Local server returns 200 for `/`, `/research/`, `/teaching/`, `/cv/`,
    `/files/cv.pdf`, `/assets/css/style.css`, and every file in `assets/fonts/`.
-3. Headless-Chrome screenshots of all three pages in light and dark mode, each
+   `sitemap.xml` lists no placeholder file and no page that does not exist.
+3. Headless-Chrome screenshots of all four pages in light and dark mode, each
    inspected; light mode compared against the static-site reference screenshots.
 4. `grep -r fonts.googleapis _site` returns nothing.
 5. Every internal `href` and `src` in `_site` resolves to a file that exists.
@@ -273,8 +307,12 @@ All of the following must pass before the work is called done:
 8. Theme extractability: grepping `_layouts/`, `_includes/`, and `assets/` for
    `Sakshi`, `Bhalla`, `illinois`, `sakshib3`, `G-CC9LEWNPER`, and the social
    handles returns nothing. Additionally, building with `_data/publications.yml`
-   emptied and the optional `author:` keys removed still produces all three
+   emptied and the optional `author:` keys removed still produces all four
    pages without errors or empty stub markup.
+9. Content completeness: the text of every live page (`/about/`, `/research/`,
+   `/teaching/`, `/cv/`) is diffed against the new build, and every difference
+   is one of the deliberate drops or rewrites named in "Content model". Nothing
+   is lost by accident.
 
 ## Risks
 
