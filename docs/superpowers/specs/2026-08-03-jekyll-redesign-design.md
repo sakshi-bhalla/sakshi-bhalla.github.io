@@ -278,13 +278,18 @@ drops the stanzas for `.sass-cache/`, `/vendor/`, `.bundle/`, `node_modules`, an
 `.github/workflows/pages.yml`, triggered on push to `main` and
 `workflow_dispatch`:
 
-- `actions/checkout` → `ruby/setup-ruby` (with `bundler-cache: true`) →
-  `actions/configure-pages` → `bundle exec jekyll build` → 
-  `actions/upload-pages-artifact` → `actions/deploy-pages`
+- `actions/checkout@v7` → `ruby/setup-ruby@v1` (with `bundler-cache: true`) →
+  `actions/configure-pages@v6` → `bundle exec jekyll build` →
+  `actions/upload-pages-artifact@v5` → `actions/deploy-pages@v5`
 - permissions `contents: read`, `pages: write`, `id-token: write`
 - concurrency group `pages`, `cancel-in-progress: false`
-- Action versions are the latest majors at implementation time, confirmed
-  against each action's repository rather than assumed.
+- Versions above are the latest majors as of 2026-08-03, read from each action's
+  releases rather than copied from a template. Gem versions likewise: Jekyll
+  4.4.1, `jekyll-sitemap` 1.4.0, `webrick` 1.9.2.
+
+`html-proofer` runs in the same job and in local verification, checking that
+every internal link and asset reference in `_site` resolves. External links are
+disabled there — a journal being briefly down should not fail a deploy.
 
 **Manual step, outside this work:** Settings → Pages → Source must be switched
 to "GitHub Actions". Until then the classic builder keeps serving the old site
