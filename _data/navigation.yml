@@ -1,9 +1,8 @@
-main:
-  - title: "Research"
-    url: /research/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "CV"
-    url: /cv/
-  - title: "WAYRT?"
-    url: /blog/
+- title: About
+  url: /
+- title: Research
+  url: /research/
+- title: Teaching
+  url: /teaching/
+- title: CV
+  url: /files/cv.pdf
