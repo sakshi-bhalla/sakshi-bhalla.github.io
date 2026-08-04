@@ -1,135 +1,35 @@
-locale: "en-US"
-site_theme: "default"
 title: "Sakshi Bhalla"
-title_separator: "-"
-name: "Sakshi Bhalla"
-description: "personal description"
-url: https://sakshi-bhalla.github.io
+description: "Sakshi Bhalla is a PhD candidate in Media and Communications at the University of Illinois Urbana-Champaign studying political information environments in India and the United States."
+url: "https://sakshi-bhalla.github.io"
 baseurl: ""
 repository: "sakshi-bhalla/sakshi-bhalla.github.io"
+lang: "en"
+
 google_site_verification: "bKREFdenzTY8ptBTygpVLOuE54BlbVu-K8U5014Lm_w"
+google_analytics: "G-CC9LEWNPER"
 
 author:
-  avatar: "profile.jpg"
   name: "Sakshi Bhalla"
-  bio: "PhD Candidate at Univ. of Illinois, <br>Urbana-Champaign"
-  location: '<a href="https://media.illinois.edu/sakshi-bhalla/">Urbana, IL</a>'
-  employer: '<a href="https://media.illinois.edu/sakshi-bhalla/">University of Illinois</a>'
+  short_name: "S. Bhalla"
+  role: "PhD Candidate, Media & Communications · University of Illinois Urbana-Champaign"
   email: "sakshib3@illinois.edu"
   googlescholar: "https://scholar.google.com/citations?user=QewpAPIAAAAJ&hl=en"
-  orcid: "https://orcid.org/0000-0002-6803-7657"
-  github: "sakshi-bhalla"
+  github: "https://github.com/sakshi-bhalla"
   bluesky: "https://bsky.app/profile/sakshi-bhalla.bsky.social"
-  linkedin: "sb11"
-  twitter: "sabyasakshi"
-
-breadcrumbs: false
-words_per_minute: 160
-future: true
-read_more: "disabled"
-
-include:
-  - .htaccess
-  - _pages
-  - files
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
-  - Application Data
-  - "Application Data"
-  - Thumbs.db
-  - .DS_Store
-  - "AppData"
-  - "*.lnk"
-
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+  orcid: "https://orcid.org/0000-0002-6803-7657"
+  linkedin: "https://www.linkedin.com/in/sb11"
 
 markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
 kramdown:
   input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-permalink: /:categories/:title/
-timezone: Etc/UTC
 
 plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
 
-analytics:
-  provider: "google-analytics-4"
-  google:
-    tracking_id: "G-CC9LEWNPER"
-
-whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docs
+  - README.md
+  - vendor

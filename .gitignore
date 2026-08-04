@@ -1,20 +1,9 @@
-# Ignore the contents of the _site directory and other cache directories
 _site/
-.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ignore files created by npm
-node_modules
-package-lock.json
-
-# Ignore the vendor file at root level and bundle for alternative installation
+# Gems are vendored locally; Gemfile.lock is tracked so CI resolves identically
 /vendor/
 .bundle/
 
-# Ignore folders related to IDEs
-.vscode/
+.DS_Store
