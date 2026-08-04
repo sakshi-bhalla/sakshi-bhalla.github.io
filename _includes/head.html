@@ -4,6 +4,7 @@
 {% assign page_description = page.description | default: site.description %}
 {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
 {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+{% if site.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <meta name="theme-color" content="#fffefc" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14120f" media="(prefers-color-scheme: dark)">
