@@ -681,11 +681,17 @@ grep -c "fonts.googleapis" _site/assets/css/style.css _site/index.html   # expec
 ```bash
 bundle exec jekyll serve --port 4000 --detach
 for scheme in light dark; do
-  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
-    --force-prefers-color-scheme=$scheme --window-size=1280,1800 --hide-scrollbars \
-    --screenshot="/tmp/task3-$scheme.png" http://localhost:4000/
+  playwright screenshot --channel=chrome --color-scheme=$scheme \
+    --viewport-size=1280,900 http://localhost:4000/ "/tmp/task3-$scheme.png"
 done
+md5 /tmp/task3-light.png /tmp/task3-dark.png
 ```
+
+Use Playwright, not `chrome --headless --force-prefers-color-scheme`. That Chrome
+flag is silently a no-op — it produces two byte-identical light-mode PNGs and
+will make a broken dark mode look verified. The `md5` line is the guard: if the
+two hashes match, the emulation did not take. `--channel=chrome` reuses the
+installed Google Chrome, so no browser download is needed.
 
 Open both PNGs and actually look at them. A blank or unstyled frame is a failure, not a pass. Expect: centered column, serif body, uppercase letterspaced nav — and in dark, warm near-black paper with legible salmon links.
 
@@ -1169,12 +1175,12 @@ ls _site/assets/webfonts _site/assets/js 2>/dev/null && echo "FAIL: stale asset 
 ```bash
 for page in "" research teaching cv; do
   for scheme in light dark; do
-    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
-      --force-prefers-color-scheme=$scheme --window-size=1280,2000 --hide-scrollbars \
-      --screenshot="/tmp/final-${page:-index}-$scheme.png" "http://localhost:4000/$page"
+    playwright screenshot --channel=chrome --color-scheme=$scheme --full-page \
+      --viewport-size=1280,1000 "http://localhost:4000/$page" "/tmp/final-${page:-index}-$scheme.png"
   done
 done
 ls /tmp/final-*.png
+md5 /tmp/final-index-light.png /tmp/final-index-dark.png   # must differ
 ```
 
 Open all eight. Compare the light set against the static-site reference. Confirm in dark mode specifically: the paper is warm near-black, links are legible salmon, the nav rule and footer rule are visible but quiet, and `<details>` markers still read.
