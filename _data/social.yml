@@ -1,0 +1,15 @@
+- key: email
+  label: Email
+  prefix: "mailto:"
+- key: googlescholar
+  label: Scholar
+- key: github
+  label: GitHub
+- key: bluesky
+  label: Bluesky
+- key: orcid
+  label: ORCID
+- key: linkedin
+  label: LinkedIn
+- key: twitter
+  label: X
