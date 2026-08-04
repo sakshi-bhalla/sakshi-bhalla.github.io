@@ -1,0 +1,32 @@
+<div class="pub entry">
+  {% if include.pub.status == 'published' and include.pub.year %}
+    <span class="date">{{ include.pub.year }}</span>
+  {% elsif include.pub.status == 'forthcoming' %}
+    <span class="date">Forthcoming</span>
+  {% endif %}
+  <p class="title">{{ include.pub.title | escape }}</p>
+  {% if include.pub.authors %}
+    <p class="byline">
+      {%- for author in include.pub.authors -%}
+        {%- if author == site.author.short_name -%}<strong>{{ author | escape }}</strong>{%- else -%}{{ author | escape }}{%- endif -%}
+        {%- unless forloop.last -%}{%- if forloop.length > 2 -%},{%- endif %} {% if forloop.rindex == 2 -%}and {% endif -%}{%- endunless -%}
+      {%- endfor -%}
+      {%- if include.pub.venue %} · <span class="venue">{{ include.pub.venue | escape }}</span>{% endif -%}
+    </p>
+  {% elsif include.pub.note %}
+    <p class="byline">{{ include.pub.note | escape }}</p>
+  {% endif %}
+  {% if include.pub.pdf or include.pub.doi %}
+    <p class="links">
+      {% if include.pub.pdf %}<a href="{{ include.pub.pdf | relative_url }}">PDF</a>{% endif %}
+      {% if include.pub.pdf and include.pub.doi %}&nbsp;{% endif %}
+      {% if include.pub.doi %}<a href="{{ include.pub.doi | escape }}">DOI</a>{% endif %}
+    </p>
+  {% endif %}
+  {% if include.pub.abstract %}
+    <details>
+      <summary>Abstract</summary>
+      <p>{{ include.pub.abstract | strip | escape }}</p>
+    </details>
+  {% endif %}
+</div>
