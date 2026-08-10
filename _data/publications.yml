@@ -1,10 +1,10 @@
-- title: "Partisan news users in the United States and India on either side seldom use fact checkers"
+- title: "Fact checkers are seldom used by news users on either side of the partisan divide"
   authors: ["R. Ray", "S. Bhalla", "H. Taneja"]
-  year: 2025
+  year: 2026
   venue: "Journal of Communication"
   status: published
   pdf: /files/paper1.pdf
-  doi: "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqaf018/8129746"
+  doi: "https://doi.org/10.1093/joc/jqaf018"
   abstract: >
     Fact checkers have low reach, and their limited efficacy is often attributed to
     perceived partisanship. Yet little research exists investigating the reach of or
@@ -44,12 +44,22 @@
 
 - title: "Classroom contexts: Teachers talk teaching media literacy"
   authors: ["S. Bhalla", "M. Nelson", "M. Spikes"]
+  year: 2025
   venue: "Journal of Media Literacy Education"
-  status: forthcoming
+  status: published
+  pdf: "https://digitalcommons.uri.edu/cgi/viewcontent.cgi?article=1807&context=jmle"
+  doi: "https://doi.org/10.23860/JMLE-2025-17-2-3"
   abstract: >
     Interviews with 20 educators reveal divides in media worlds, school resources, and
     political context that shape how media literacy is taught and experienced,
     highlighting the need for bottom-up approaches to improve outcomes.
+
+- title: "User-defined repertoires"
+  authors: ["S. Bhalla", "H. Taneja"]
+  year: 2025
+  venue: "Elgar Encyclopedia of Political Communication"
+  status: published
+  note: "In A. Nai, M. Grömping & D. Wirz (Eds.). Edward Elgar Publishing."
 
 - title: "Following the news: Polarization and the networked structure of attention"
   status: wip
@@ -91,3 +101,8 @@
     less a tally of independent market failures than the local expression of a regional
     condition. This bears on the scale at which the erosion of local news is measured
     and addressed.
+
+- title: "When machines start writing: Assessing the impact of generative AI on journalism labor markets"
+  authors: ["S. Bhalla", "J. Henrichsen", "B. Toff"]
+  status: wip
+  note: "Presented at the Computational Methods Division, International Communication Association, 2026."

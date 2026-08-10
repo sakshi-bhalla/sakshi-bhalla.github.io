@@ -9,7 +9,8 @@ My current and forthcoming work focuses on structural change in information envi
 
 ## Publications
 
-{% for item in site.data.publications %}{% unless item.status == 'wip' %}{% include publication.html pub=item %}{% endunless %}{% endfor %}
+{% assign pubs = site.data.publications | where_exp: "item", "item.status != 'wip'" | sort: "year" | reverse %}
+{% for item in pubs %}{% include publication.html pub=item %}{% endfor %}
 
 ## Works in progress
 
