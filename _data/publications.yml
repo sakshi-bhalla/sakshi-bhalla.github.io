@@ -53,7 +53,41 @@
 
 - title: "Following the news: Polarization and the networked structure of attention"
   status: wip
+  award: "Top Paper Prize · International Communication Association, 2026"
+  abstract: >
+    Polarization can be built into the structure of a media system itself, not only
+    into what any individual chooses to follow. This study looks at India's news
+    environment through a network of 485 prominent journalists and their 32 million
+    followers on X, asking whether the cues that shape who follows whom — geographic
+    location, organizational affiliation, media format, and content similarity — track
+    the country's political divide or cut across it. It treats journalists, not
+    outlets, as the unit of analysis, and uses Additive and Multiplicative Effects
+    models of the resulting co-following network. These cues do not all behave the same
+    way. Geographic location organizes attention along a line that runs largely
+    independent of ideology, holding up even among journalists with nothing else in
+    common politically. Organizational affiliation and media format track the divide
+    much more closely, and format's pull toward polarized clustering only weakens, and
+    even reverses, among the most established legacy journalists. Even a cue with no
+    obvious ideological content can end up organizing political sorting. Polarization,
+    this suggests, can be built into the architecture of the media system, not only
+    into individual choice.
 
-- title: "News(paper) flows: A spatial examination of local newspaper circulation"
+- title: "Read all around it: The regional organization of newspaper markets"
   status: wip
   note: "Earlier version presented at the Local News Researchers Workshop, March 2024, Durham, NC."
+  abstract: >
+    Counties that look alike on every characteristic known to predict newspaper
+    viability can differ several-fold in how widely their papers circulate. Much of
+    that difference tracks their surroundings. Drawing on circulation data for 3,108
+    counties in the contiguous United States and spatial econometric models, this study
+    finds that the penetration of newspapers in a county is associated with the
+    circulation of the counties bordering it. The relationship persists after
+    conditioning on county demographics, partisanship, turnout, market concentration,
+    and the wider media environment, as well as on those same characteristics measured
+    across a county's neighbors. The conditions that sustain a local newspaper
+    therefore extend past the county it serves. Since the association is positive, it
+    runs in both directions. That is, well supplied counties adjoin one another, and so
+    do counties whose papers reach few households. News deserts, on this evidence, are
+    less a tally of independent market failures than the local expression of a regional
+    condition. This bears on the scale at which the erosion of local news is measured
+    and addressed.

@@ -13,8 +13,12 @@
       {%- endfor -%}
       {%- if include.pub.venue %} · <span class="venue">{{ include.pub.venue | escape }}</span>{% endif -%}
     </p>
-  {% elsif include.pub.note %}
-    <p class="byline">{{ include.pub.note | escape }}</p>
+  {% endif %}
+  {% if include.pub.award %}
+    <p class="note award">{{ include.pub.award | escape }}</p>
+  {% endif %}
+  {% if include.pub.note %}
+    <p class="note">{{ include.pub.note | escape }}</p>
   {% endif %}
   {% if include.pub.pdf or include.pub.doi %}
     <p class="links">

@@ -178,6 +178,20 @@ a:hover { text-decoration-color: var(--accent); }
 
 .pub .venue { font-style: italic; }
 
+.pub .note {
+  font-size: 0.86rem;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+
+.pub .note.award {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .pub .links {
   font-family: var(--sans);
   font-size: 0.72rem;
