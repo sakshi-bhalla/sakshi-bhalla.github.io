@@ -2,9 +2,9 @@
   url: /
 - title: Research
   url: /research/
-- title: Tools & Software
-  url: /software/
 - title: Teaching
   url: /teaching/
 - title: CV
   url: /files/cv.pdf
+- title: Tools & Software
+  url: /software/
