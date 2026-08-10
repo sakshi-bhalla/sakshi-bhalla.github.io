@@ -16,5 +16,8 @@ description: "Open-source research tools and software by Sakshi Bhalla, includin
     <a href="https://huggingface.co/sakshib3/Llama-3.1-breakingnews">Model</a>&nbsp;
     <a href="https://doi.org/10.5281/zenodo.21863477">DOI</a>
   </p>
-  <p class="software-desc">A broadcast news transcript arrives as an undifferentiated block of 2,000 to 17,000 words covering several unrelated stories. Content analysis needs a comparable unit, and a television transcript is not one article — treating it as one, or splitting it on speaker turns, gives the wrong denominator. This package finds the word offsets where one story ends and the next begins, emits one row per story, and reconstructs the source byte for byte.</p>
+  <details>
+    <summary>Details</summary>
+    <p>A broadcast news transcript arrives as an undifferentiated block of 2,000 to 17,000 words covering several unrelated stories. Content analysis needs a comparable unit, and a television transcript is not one article — treating it as one, or splitting it on speaker turns, gives the wrong denominator. This package finds the word offsets where one story ends and the next begins, emits one row per story, and reconstructs the source byte for byte. Boundaries are identified by a LoRA adapter on Llama-3.1-8B, fine-tuned on 998 annotated transcripts containing 2,829 boundaries drawn from US television news between 1992 and 2020. Segmentation is treated as a partition: every character lands in exactly one story.</p>
+  </details>
 </div>
