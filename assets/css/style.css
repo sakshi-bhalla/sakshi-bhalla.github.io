@@ -224,6 +224,12 @@ a:hover { text-decoration-color: var(--accent); }
   margin-top: 0.35rem;
 }
 
+.pub .software-desc {
+  font-size: 0.93rem;
+  color: var(--abstract);
+  margin-top: 0.5rem;
+}
+
 ul { padding-left: 1.1rem; margin: 0 0 1.05rem; }
 li { margin-bottom: 0.35rem; }
 
