@@ -6,8 +6,10 @@ _site/
 /vendor/
 .bundle/
 
-# CV LaTeX source: kept locally for editing, not tracked or published
+# CV LaTeX source and its build output: kept locally, not tracked
+# The published copy lives at files/cv.pdf
 cv.tex
+/cv.pdf
 *.aux
 *.log
 *.out
