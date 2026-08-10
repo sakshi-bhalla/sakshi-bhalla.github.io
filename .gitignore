@@ -6,4 +6,13 @@ _site/
 /vendor/
 .bundle/
 
+# CV LaTeX source: kept locally for editing, not tracked or published
+cv.tex
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
 .DS_Store
