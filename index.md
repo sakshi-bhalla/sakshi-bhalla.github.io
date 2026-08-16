@@ -12,5 +12,3 @@ I study political information across two substantive areas: (1) what the high-ch
 I built [**breakingnews**](https://pypi.org/project/breakingnews/), an open-source Python package that segments broadcast news transcripts into individual stories. It applies parameter-efficient LLM adaptation to transform unstructured multi-hour text dumps into comparable story units.
 
 This summer, I am a Research Scientist at Amazon in Washington, DC, applying causal inference, machine learning and large-scale behavioral measurement to questions about audiences.
-
-You can contact me at sakshib3[at]illinois[dot]edu.
