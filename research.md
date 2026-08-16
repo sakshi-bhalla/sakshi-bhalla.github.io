@@ -5,12 +5,12 @@ permalink: /research/
 description: "Publications and working papers by Sakshi Bhalla."
 ---
 
-My current and forthcoming work focuses on structural change in information environments, media and information infrastructures and their consequences for political behavior, and platform-mediated news exposure and polarization.
-
 ## Publications
 
-{% assign pubs = site.data.publications | where_exp: "item", "item.status != 'wip'" | sort: "year" | reverse %}
-{% for item in pubs %}{% include publication.html pub=item %}{% endfor %}
+{% assign published = site.data.publications | where_exp: "item", "item.status != 'wip' and item.status != 'forthcoming'" | sort: "year" | reverse %}
+{% assign forthcoming = site.data.publications | where: "status", "forthcoming" %}
+{% for item in forthcoming %}{% include publication.html pub=item %}{% endfor %}
+{% for item in published %}{% include publication.html pub=item %}{% endfor %}
 
 ## Works in progress
 
