@@ -3,7 +3,7 @@
   {% if site.author.role %}<p class="role">{{ site.author.role | escape }}</p>{% endif %}
   <nav>
     {% for item in site.data.navigation %}
-    <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
+    <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}{% if item.external %} target="_blank" rel="noopener"{% endif %}>{{ item.title | escape }}</a>
     {% endfor %}
   </nav>
 </header>

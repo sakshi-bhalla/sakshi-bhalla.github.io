@@ -28,9 +28,9 @@
   {% endif %}
   {% if include.pub.pdf or include.pub.doi %}
     <p class="links">
-      {% if include.pub.pdf %}<a href="{{ include.pub.pdf | relative_url }}">PDF</a>{% endif %}
+      {% if include.pub.pdf %}<a href="{{ include.pub.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
       {% if include.pub.pdf and include.pub.doi %}&nbsp;{% endif %}
-      {% if include.pub.doi %}<a href="{{ include.pub.doi | escape }}">DOI</a>{% endif %}
+      {% if include.pub.doi %}<a href="{{ include.pub.doi | escape }}" target="_blank" rel="noopener">DOI</a>{% endif %}
     </p>
   {% endif %}
   {% if include.pub.abstract %}

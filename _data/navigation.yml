@@ -6,5 +6,6 @@
   url: /teaching/
 - title: CV
   url: /files/cv.pdf
+  external: true
 - title: Tools & Software
   url: /software/
