@@ -9,7 +9,11 @@ _site/
 # CV LaTeX source and its build output: kept locally, not tracked
 # The published copy lives at files/cv.pdf
 cv.tex
+cv-new.tex
+cv-template.tex
 /cv.pdf
+/cv-new.pdf
+*.xdv
 *.aux
 *.log
 *.out
