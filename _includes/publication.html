@@ -5,13 +5,19 @@
     <span class="date">Forthcoming</span>
   {% endif %}
   <p class="title">{{ include.pub.title | escape }}</p>
-  {% if include.pub.authors %}
+  {% if include.pub.coauthors or include.pub.venue %}
     <p class="byline">
-      {%- for author in include.pub.authors -%}
-        {%- if author == site.author.short_name -%}<strong>{{ author | escape }}</strong>{%- else -%}{{ author | escape }}{%- endif -%}
-        {%- unless forloop.last -%}{%- if forloop.length > 2 -%},{%- endif %} {% if forloop.rindex == 2 -%}and {% endif -%}{%- endunless -%}
-      {%- endfor -%}
-      {%- if include.pub.venue %} · <span class="venue">{{ include.pub.venue | escape }}</span>{% endif -%}
+      {%- if include.pub.coauthors -%}
+        With
+        {% for author in include.pub.coauthors -%}
+          {{ author | escape }}
+          {%- unless forloop.last -%}{%- if forloop.length > 2 -%},{%- endif %} {% if forloop.rindex == 2 -%}and {% endif -%}{%- endunless -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if include.pub.venue -%}
+        {%- if include.pub.coauthors %} · {% endif -%}
+        <span class="venue">{{ include.pub.venue | escape }}</span>
+      {%- endif -%}
     </p>
   {% endif %}
   {% if include.pub.award %}

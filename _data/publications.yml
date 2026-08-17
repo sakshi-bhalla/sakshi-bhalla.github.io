@@ -1,9 +1,9 @@
 - title: "Scope it: Understanding how to measure journalism employment"
-  authors: ["J. Henrichsen", "S. Bhalla", "L. Lincoln", "B. Toff", "L. Waananen Jones"]
+  coauthors: ["J. Henrichsen", "L. Lincoln", "B. Toff", "L. Waananen Jones"]
   status: forthcoming
 
 - title: "Fact checkers are seldom used by news users on either side of the partisan divide"
-  authors: ["R. Ray", "S. Bhalla", "H. Taneja"]
+  coauthors: ["R. Ray", "H. Taneja"]
   year: 2026
   venue: "Journal of Communication"
   status: published
@@ -20,7 +20,7 @@
     that interventions penetrate selectively partisan news audiences.
 
 - title: "When news is entertainment: Explaining the persistence of misinformation through the information environment"
-  authors: ["S. Bhalla", "R. Ray", "H. Taneja"]
+  coauthors: ["R. Ray", "H. Taneja"]
   year: 2025
   venue: "Information, Communication & Society"
   status: published
@@ -34,7 +34,7 @@
     receptivity to corrections.
 
 - title: "Climate strikes in millennial India: Social capital and \"on-ground\" networks in digital-first movements"
-  authors: ["A. Khan", "S. Natarajan", "S. Bhalla"]
+  coauthors: ["A. Khan", "S. Natarajan"]
   year: 2021
   venue: "Communication, Culture & Critique"
   status: published
@@ -47,7 +47,7 @@
     on-the-ground organizing.
 
 - title: "Classroom contexts: Teachers talk teaching media literacy"
-  authors: ["S. Bhalla", "M. Nelson", "M. Spikes"]
+  coauthors: ["M. Nelson", "M. Spikes"]
   year: 2025
   venue: "Journal of Media Literacy Education"
   status: published
@@ -59,7 +59,7 @@
     highlighting the need for bottom-up approaches to improve outcomes.
 
 - title: "User-defined repertoires"
-  authors: ["S. Bhalla", "H. Taneja"]
+  coauthors: ["H. Taneja"]
   year: 2025
   venue: "Elgar Encyclopedia of Political Communication"
   status: published
@@ -107,5 +107,6 @@
     and addressed.
 
 - title: "When machines start writing: Assessing the impact of generative AI on journalism labor markets"
+  coauthors: ["J. Henrichsen", "B. Toff"]
   status: wip
-  note: "With Jenn Henrichsen and Benjamin Toff. Presented at the Computational Methods Division, International Communication Association, 2026."
+  note: "Presented at the Computational Methods Division, International Communication Association, 2026."
