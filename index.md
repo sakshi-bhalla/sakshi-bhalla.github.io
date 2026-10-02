@@ -3,7 +3,7 @@ layout: default
 permalink: /
 ---
 
-I am a PhD candidate in Media and Communications at the [University of Illinois Urbana-Champaign](https://media.illinois.edu/sakshi-bhalla/), where I hold the Illinois Distinguished Fellowship. I am advised by [Scott Althaus](https://clinecenter.illinois.edu/people/salthaus). 
+I am a PhD candidate in Media and Communications at the [University of Illinois Urbana-Champaign](https://media.illinois.edu/sakshi-bhalla/), where I hold the Illinois Distinguished Fellowship. I am advised by Prof. [Scott Althaus](https://clinecenter.illinois.edu/people/salthaus). 
 
 My work has appeared in the *Journal of Communication*, *Information, Communication & Society* and others. My paper "Following the News: Polarization and the Networked Structure of Attention" won the Top Paper Prize at the 2026 International Communication Association meeting.
 
